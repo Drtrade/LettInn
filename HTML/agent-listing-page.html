@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent Listing Page</title>
+
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <nav>
+        
+        <div class="nav-center">
+            <div class="nav-header">
+                <h6><a href="./home-page.html">Lett Inn</a></h6>
+                
+                <button class="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+    
+            
+            <ul class="links">
+                <li><a href="./Buy.html">Buy</a></li>
+                <li><a href="./Rent.html">Rent</a></li>
+                <li><a href="./Sell.html">Sell</a></li>
+                <li><a href="./agent-finder.html">Agent Finder</a></li>
+                <li><a href="./p-listing-page.html">Products</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./sign-up.html">Sign Up</a></li>
+            </ul>
+            
+        </div>
+    </nav>
+
+    <main>
+        <!-- Everything in here is for searching for agents -->
+        <section class="aListingFilter">
+            <div class="aListsrch">
+               <div class="alisst-h1">
+                <h1>Find an agent who knows your market best</h1>
+               </div>
+                <form action="">
+                    <input type="text" name="agentName" id="agentName" placeholder="Name of REALTOR" autocomplete="on">
+                </form>
+                
+                <button type="submit">🔍</button>
+                
+            </div>
+
+            <!-- Here we use JS to create a dynamic filter -->
+            <!-- <div class="aListFilter">
+                <div id="aListRating"></div>
+                <div id="aListRecomd"></div>
+                <div id="aListPrice"></div>
+
+            </div> -->
+        </section>
+
+        <section class="aListContainer">
+            <h1>Real Estate Agents</h1>
+            <!-- There will be a drop down on the link that displays realtors based on categories -->
+            <p>Sort by <a href="#">Most recent activity</a></p> 
+
+
+            <section class="aListFlex">
+                <!-- Here are the list of the real estate agents -->
+                <section class="agentListCon">
+
+                    <div class="alCardcontainer">
+                        <div class="aListImg">
+                            <a href="./agent-profile-page.html">
+                                <img src="./images/Agents/300x300 (1).jpg" alt="">
+                            </a>
+                        </div>
+    
+                        <div class="alRealtor-info">
+                           
+                            <div class="alRealtor-details">
+                                <h3>Nancy Silva. Civil Servant Real Estate Buyer Agent REALTOR</h3>
+                                <p>LETTINN EXECUTIVE REALTY, HOME OF TOP PRODUCERS</p>
+                                <p>Experience: 10 years 2 months</p>
+                            </div>
+                            <!-- everything in here will be flexed -->
+                            <div class="alRealtor-Contact">
+                            
+                                <p><u>090229874</u></p>
+                                <p><u>Email</u></p>
+                         
+                            </div>
+                        </div>
+    
+                        <div class="alReator-sellInfo">
+                            <p>For sale: 70</p>
+                            <p>Sold: 100</p>
+                            <p>Activity range: N25M - N2B</p>
+    
+                            <!-- batches goes here as icons -->
+                        </div>
+                    </div>
+                    <div class="alCardcontainer">
+                        <div class="aListImg">
+                            <a href="./agent-profile-page.html">
+                                <img src="./images/Agents/300x300 (1).jpg" alt="">
+                            </a>
+                        </div>
+    
+                        <div class="alRealtor-info">
+                           
+                            <div class="alRealtor-details">
+                                <h3>Nancy Silva. Civil Servant Real Estate Buyer Agent REALTOR</h3>
+                                <p>LETTINN EXECUTIVE REALTY, HOME OF TOP PRODUCERS</p>
+                                <p>Experience: 10 years 2 months</p>
+                            </div>
+                            <!-- everything in here will be flexed -->
+                            <div class="alRealtor-Contact">
+                            
+                                <p><u>090229874</u></p>
+                                <p><u>Email</u></p>
+                         
+                            </div>
+                        </div>
+    
+                        <div class="alReator-sellInfo">
+                            <p>For sale: 70</p>
+                            <p>Sold: 100</p>
+                            <p>Activity range: N25M - N2B</p>
+    
+                            <!-- batches goes here as icons -->
+                        </div>
+                    </div>
+                    <div class="alCardcontainer">
+                        <div class="aListImg">
+                            <a href="./agent-profile-page.html">
+                                <img src="./images/Agents/300x300 (1).jpg" alt="">
+                            </a>
+                        </div>
+    
+                        <div class="alRealtor-info">
+                           
+                            <div class="alRealtor-details">
+                                <h3>Nancy Silva. Civil Servant Real Estate Buyer Agent REALTOR</h3>
+                                <p>LETTINN EXECUTIVE REALTY, HOME OF TOP PRODUCERS</p>
+                                <p>Experience: 10 years 2 months</p>
+                            </div>
+                            <!-- everything in here will be flexed -->
+                            <div class="alRealtor-Contact">
+                            
+                                <p><u>090229874</u></p>
+                                <p><u>Email</u></p>
+                         
+                            </div>
+                        </div>
+    
+                        <div class="alReator-sellInfo">
+                            <p>For sale: 70</p>
+                            <p>Sold: 100</p>
+                            <p>Activity range: N25M - N2B</p>
+    
+                            <!-- batches goes here as icons -->
+                        </div>
+                    </div>
+                    <div class="alCardcontainer">
+                        <div class="aListImg">
+                            <a href="./agent-profile-page.html">
+                                <img src="./images/Agents/300x300 (1).jpg" alt="">
+                            </a>
+                        </div>
+    
+                        <div class="alRealtor-info">
+                           
+                            <div class="alRealtor-details">
+                                <h3>Nancy Silva. Civil Servant Real Estate Buyer Agent REALTOR</h3>
+                                <p>LETTINN EXECUTIVE REALTY, HOME OF TOP PRODUCERS</p>
+                                <p>Experience: 10 years 2 months</p>
+                            </div>
+                            <!-- everything in here will be flexed -->
+                            <div class="alRealtor-Contact">
+                            
+                                <p><u>090229874</u></p>
+                                <p><u>Email</u></p>
+                         
+                            </div>
+                        </div>
+    
+                        <div class="alReator-sellInfo">
+                            <p>For sale: 70</p>
+                            <p>Sold: 100</p>
+                            <p>Activity range: N25M - N2B</p>
+    
+                            <!-- batches goes here as icons -->
+                        </div>
+                    </div>
+                    <div class="alCardcontainer">
+                        <div class="aListImg">
+                            <a href="./agent-profile-page.html">
+                                <img src="./images/Agents/300x300 (1).jpg" alt="">
+                            </a>
+                        </div>
+    
+                        <div class="alRealtor-info">
+                           
+                            <div class="alRealtor-details">
+                                <h3>Nancy Silva. Civil Servant Real Estate Buyer Agent REALTOR</h3>
+                                <p>LETTINN EXECUTIVE REALTY, HOME OF TOP PRODUCERS</p>
+                                <p>Experience: 10 years 2 months</p>
+                            </div>
+                            <!-- everything in here will be flexed -->
+                            <div class="alRealtor-Contact">
+                            
+                                <p><u>090229874</u></p>
+                                <p><u>Email</u></p>
+                         
+                            </div>
+                        </div>
+    
+                        <div class="alReator-sellInfo">
+                            <p>For sale: 70</p>
+                            <p>Sold: 100</p>
+                            <p>Activity range: N25M - N2B</p>
+    
+                            <!-- batches goes here as icons -->
+                        </div>
+                    </div>
+                    <div class="alCardcontainer">
+                        <div class="aListImg">
+                            <a href="./agent-profile-page.html">
+                                <img src="./images/Agents/300x300 (1).jpg" alt="">
+                            </a>
+                        </div>
+    
+                        <div class="alRealtor-info">
+                           
+                            <div class="alRealtor-details">
+                                <h3>Nancy Silva. Civil Servant Real Estate Buyer Agent REALTOR</h3>
+                                <p>LETTINN EXECUTIVE REALTY, HOME OF TOP PRODUCERS</p>
+                                <p>Experience: 10 years 2 months</p>
+                            </div>
+                            <!-- everything in here will be flexed -->
+                            <div class="alRealtor-Contact">
+                            
+                                <p><u>090229874</u></p>
+                                <p><u>Email</u></p>
+                         
+                            </div>
+                        </div>
+    
+                        <div class="alReator-sellInfo">
+                            <p>For sale: 70</p>
+                            <p>Sold: 100</p>
+                            <p>Activity range: N25M - N2B</p>
+    
+                            <!-- batches goes here as icons -->
+                        </div>
+                    </div>
+                    <div class="alCardcontainer">
+                        <div class="aListImg">
+                            <a href="./agent-profile-page.html">
+                                <img src="./images/Agents/300x300 (1).jpg" alt="">
+                            </a>
+                        </div>
+    
+                        <div class="alRealtor-info">
+                           
+                            <div class="alRealtor-details">
+                                <h3>Nancy Silva. Civil Servant Real Estate Buyer Agent REALTOR</h3>
+                                <p>LETTINN EXECUTIVE REALTY, HOME OF TOP PRODUCERS</p>
+                                <p>Experience: 10 years 2 months</p>
+                            </div>
+                            <!-- everything in here will be flexed -->
+                            <div class="alRealtor-Contact">
+                            
+                                <p><u>090229874</u></p>
+                                <p><u>Email</u></p>
+                         
+                            </div>
+                        </div>
+    
+                        <div class="alReator-sellInfo">
+                            <p>For sale: 70</p>
+                            <p>Sold: 100</p>
+                            <p>Activity range: N25M - N2B</p>
+    
+                            <!-- batches goes here as icons -->
+                        </div>
+                    </div>
+                    <div class="alCardcontainer">
+                        <div class="aListImg">
+                            <a href="./agent-profile-page.html">
+                                <img src="./images/Agents/300x300 (1).jpg" alt="">
+                            </a>
+                        </div>
+    
+                        <div class="alRealtor-info">
+                           
+                            <div class="alRealtor-details">
+                                <h3>Nancy Silva. Civil Servant Real Estate Buyer Agent REALTOR</h3>
+                                <p>LETTINN EXECUTIVE REALTY, HOME OF TOP PRODUCERS</p>
+                                <p>Experience: 10 years 2 months</p>
+                            </div>
+                            <!-- everything in here will be flexed -->
+                            <div class="alRealtor-Contact">
+                            
+                                <p><u>090229874</u></p>
+                                <p><u>Email</u></p>
+                         
+                            </div>
+                        </div>
+    
+                        <div class="alReator-sellInfo">
+                            <p>For sale: 70</p>
+                            <p>Sold: 100</p>
+                            <p>Activity range: N25M - N2B</p>
+    
+                            <!-- batches goes here as icons -->
+                        </div>
+                    </div>
+                    <div class="alCardcontainer">
+                        <div class="aListImg">
+                            <a href="./agent-profile-page.html">
+                                <img src="./images/Agents/300x300 (1).jpg" alt="">
+                            </a>
+                        </div>
+    
+                        <div class="alRealtor-info">
+                           
+                            <div class="alRealtor-details">
+                                <h3>Nancy Silva. Civil Servant Real Estate Buyer Agent REALTOR</h3>
+                                <p>LETTINN EXECUTIVE REALTY, HOME OF TOP PRODUCERS</p>
+                                <p>Experience: 10 years 2 months</p>
+                            </div>
+                            <!-- everything in here will be flexed -->
+                            <div class="alRealtor-Contact">
+                            
+                                <p><u>090229874</u></p>
+                                <p><u>Email</u></p>
+                         
+                            </div>
+                        </div>
+    
+                        <div class="alReator-sellInfo">
+                            <p>For sale: 70</p>
+                            <p>Sold: 100</p>
+                            <p>Activity range: N25M - N2B</p>
+    
+                            <!-- batches goes here as icons -->
+                        </div>
+                    </div>
+                    <div class="alCardcontainer">
+                        <div class="aListImg">
+                            <a href="./agent-profile-page.html">
+                                <img src="./images/Agents/300x300 (1).jpg" alt="">
+                            </a>
+                        </div>
+    
+                        <div class="alRealtor-info">
+                           
+                            <div class="alRealtor-details">
+                                <h3>Nancy Silva. Civil Servant Real Estate Buyer Agent REALTOR</h3>
+                                <p>LETTINN EXECUTIVE REALTY, HOME OF TOP PRODUCERS</p>
+                                <p>Experience: 10 years 2 months</p>
+                            </div>
+                            <!-- everything in here will be flexed -->
+                            <div class="alRealtor-Contact">
+                            
+                                <p><u>090229874</u></p>
+                                <p><u>Email</u></p>
+                         
+                            </div>
+                        </div>
+    
+                        <div class="alReator-sellInfo">
+                            <p>For sale: 70</p>
+                            <p>Sold: 100</p>
+                            <p>Activity range: N25M - N2B</p>
+    
+                            <!-- batches goes here as icons -->
+                        </div>
+                    </div>
+                    <div class="alCardcontainer">
+                        <div class="aListImg">
+                            <a href="./agent-profile-page.html">
+                                <img src="./images/Agents/300x300 (1).jpg" alt="">
+                            </a>
+                        </div>
+    
+                        <div class="alRealtor-info">
+                           
+                            <div class="alRealtor-details">
+                                <h3>Nancy Silva. Civil Servant Real Estate Buyer Agent REALTOR</h3>
+                                <p>LETTINN EXECUTIVE REALTY, HOME OF TOP PRODUCERS</p>
+                                <p>Experience: 10 years 2 months</p>
+                            </div>
+                            <!-- everything in here will be flexed -->
+                            <div class="alRealtor-Contact">
+                            
+                                <p><u>090229874</u></p>
+                                <p><u>Email</u></p>
+                         
+                            </div>
+                        </div>
+    
+                        <div class="alReator-sellInfo">
+                            <p>For sale: 70</p>
+                            <p>Sold: 100</p>
+                            <p>Activity range: N25M - N2B</p>
+    
+                            <!-- batches goes here as icons -->
+                        </div>
+                    </div>
+
+                </section>
+               
+                <!-- Here Agent List aside articles -->
+                <section class="alRealtor-aside">
+                    <artcle class="aListarticle1">
+                        <h2>How to Select a Realtor</h2>
+                        <div class="aListaInfo">
+                            <p>Use The <a href="#">Find a Realtor</a>
+                                search engine on lettinn.com to find individuals who activel sell in your community
+                            </p>
+                            <p>Get recommendations from friends and family members who have bought or sold their properties recenty.</p>
+                            <p>Look for REALTOR signs in your community.</p>
+                            <p>Attend open houses and see if you connect with a REALTOR.</p>
+                            <p>Call your neighborhood real estate brokerages</p>
+                            <p><a href="">Read more</a>></p>
+                        </div>
+                    </artcle>
+
+                    <article class="aListarticle2">
+                        <h2>Everyone's Reading</h2>
+                        <div class="aLista2Iconpg">
+                            
+                            <p><a href="#">How to Find the Right Real Estate Agent</a></p>
+                        </div>
+                        <div class="aLista2Iconpg">
+                            
+                            <p><a href="#">First-Time Home Buyer Resource Center</a></p>
+                        </div>
+                        <div class="aLista2Iconpg">
+                            
+                            <p><a href="#">The complete Guide to Selling Your Home</a></p>
+                        </div>
+                        <div class="aLista2Iconpg">
+                            
+                            <p><a href="#">Estimate your home's value</a></p>
+                        </div>
+                        <div class="aLista2Iconpg">
+                          
+                            <p><a href="#">Compare home loan's and get pre-aproved</a></p>
+                        </div>
+                    </article>
+    
+                </section>
+            </section>
+        </section>
+
+        
+    </main>
+    
+    
+    <footer>
+        <div class="about-letin">
+            <h3>ABout LettInn Recommendation's</h3>
+            <p>Recommendations are based on your location and search activity, such as the homes 
+                you've viewed and saved and the filters you've used. We use this 
+                information to bring similar homes to your attention, so you don't miss out.
+            </p>
+        </div>
+        <div class="footerflex">
+           
+            <section class="company">
+                <h3>Company</h3>
+                <p><a href="#">About Us</a></p>
+                <p><a href="#">Team</a></p>
+                <p><a href="#">Sales Leadership</a></p>
+                <p><a href="#">Investors</a></p>
+                <p><a href="#">Join as an agent</a></p>
+                <p><a href="#">Careers</a></p>
+                <p><a href="#">Contact Us</a></p>
+                <p><a href="#">Offices</a></p>
+                <p><a href="#">Newsrrom</a></p>
+                
+            </section>
+    
+            <section class="Explore">
+                <h3>Explore</h3>
+                <p><a href="#">Concierge</a></p>
+                <p><a href="#">Private Exclusive</a></p>
+                <p><a href="#">LetInn Coming Soon</a></p>
+                <p><a href="#">Find an Agent</a></p>
+                <p><a href="#">Mortgage Calculator</a></p>
+                <p><a href="#">LetInn Academy</a></p>
+                <p><a href="#">LetInn Care</a></p>
+                <p><a href="#">Diversity & Inclusion</a></p>
+                <p><a href="#">Blog</a></p>
+                <p><a href="#">Neighborhood Guides</a></p>
+                <p><a href="#">New Development</a></p>
+                <p><a href="#">Commercial</a></p>
+                <p><a href="#">Resently Sold Homes</a></p>
+                <p><a href="#">Sitemap</a></p>
+            </section>
+
+            <section class="moreinfo">
+                <h3>More About LettIn</h3>
+                <p><a href="#">Do not sell my personal information</a></p>
+                <p><a href="#">Terms of service</a></p>
+                <p><a href="#">Privacy center</a></p>
+                <p><a href="#">Scam avoidance</a></p>
+                <p><a href="#">Responsible disclosure</a></p>
+                <p><a href="#">Notice for abuja applicants</a></p>
+                <p><a href="#">Your FCT privacy rights</a></p>
+            </section>
+    
+            <section class="social">
+                <h3>Social Media</h3>
+                <p><a href=""></a></p>
+                <p><a href=""></a></p>
+                <p><a href=""></a></p>
+                <p><a href=""></a></p>
+                <p><a href=""></a></p>
+                <p><a href=""></a></p>
+            </section>
+        </div>
+
+        <section class="copyright">
+            <p>&copy; 2024</p>
+            <p>All rights reserved</p>
+        </section>
+    </footer>
+</body>
+</html>

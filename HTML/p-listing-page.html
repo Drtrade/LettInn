@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Listing Page</title>
+
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <script src="https://kit.fontawesome.com/fd67e25195.js" crossorigin="anonymous"></script>
+    <script src="../JS/tetiary.js" defer></script>
+</head>
+<body>
+    <nav>
+        
+        <div class="nav-center">
+            <div class="nav-header">
+                <h6><a href="./home-page.html">Lett Inn</a></h6>
+                
+                <button class="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+    
+            
+            <ul class="links">
+                <li><a href="./Buy.html">Buy</a></li>
+                <li><a href="./Rent.html">Rent</a></li>
+                <li><a href="./Sell.html">Sell</a></li>
+                <li><a href="./agent-finder.html">Agent Finder</a></li>
+                <li><a href="./p-listing-page.html">Products</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./sign-up.html">Sign Up</a></li>
+            </ul>
+            
+        </div>
+    </nav>
+
+    <main>
+        <!-- This section is for filtering based on different categories -->
+        <section id="pLfilter" class="plFilter">
+            <form action="" autocomplete="on" class="pl-srchbox">
+                <input type="search" id="plsch" name="search box" placeholder="Add a location">
+                <button type="submit">🔍</button>
+            </form>
+
+            <!-- This is for product selection based on Rent, Sell -->
+            
+                
+            <!-- <select name="plist" id="plist" class="sepr">
+                <option value="Rent">For Rent</option>
+                <option value="Sell">For Sell</option>
+            </select> -->
+           
+
+   
+               <!-- Inside this option there will be a h4(Price Range) 
+                and the first thing users will see is Price -->
+            <!-- <div class="custom-select">
+                <select name="plprice" id="plprice" class="minMax">
+            
+                    <optgroup label="Minimum">
+                        <option value="N0">N0</option>
+                        <option value="N200,000">N200,000</option>
+                        <option value="N400,000">N400,000</option>
+                        <option value="N600,000">N600,000</option>
+                        <option value="N800,000">N800,000</option>
+                        <option value="N1000,000">N1000,000</option>
+                        <option value="N2000,000">N2000,000</option>
+                        <option value="N3000,000">N3000,000</option>
+                        <option value="N4000,000">N4000,000</option>
+                        <option value="N5000,000">N5000,000</option>
+                        <option value="N6000,000">N6000,000</option>
+                        <option value="N7000,000">N7000,000</option>
+                        <option value="N8000,000">N8000,000</option>
+                        <option value="N9000,000">N9000,000</option>
+                        <option value="N10,000,000">N10,000,000</option>
+                    </optgroup>
+    
+                    <optgroup label="Maximum">
+                        <option value="N200,000">N200,000</option>
+                        <option value="N400,000">N400,000</option>
+                        <option value="N600,000">N600,000</option>
+                        <option value="N800,000">N800,000</option>
+                        <option value="N1000,000">N1000,000</option>
+                        <option value="N2000,000">N2000,000</option>
+                        <option value="N3000,000">N3000,000</option>
+                        <option value="N4000,000">N4000,000</option>
+                        <option value="N5000,000">N5000,000</option>
+                        <option value="N6000,000">N6000,000</option>
+                        <option value="N7000,000">N7000,000</option>
+                        <option value="N8000,000">N8000,000</option>
+                        <option value="N9000,000">N9000,000</option>
+                        <option value="N10,000,000">N10,000,000</option>
+                        <option value="any value">Any Value</option>
+                    </optgroup>
+                </select>
+            </div> -->
+            
+
+            <!-- This is for Bed and Bath filter option -->
+            <!-- <form action="">
+                <select name="bedbath" id="bedbath">
+                    <optgroup label="Bedrooms">
+                        <option value="Any">Any</option>
+                        <option value="1+">1+</option>
+                        <option value="2+">2+</option>
+                        <option value="3+">3+</option>
+                        <option value="4+">4+</option>
+                        <option value="5+">5+</option>
+                    </optgroup>
+                    <optgroup label="Bathrooms">
+                        <option value="Any">Any</option>
+                        <option value="1+">1+</option>
+                        <option value="1.5+">1.5+</option>
+                        <option value="2+">2+</option>
+                        <option value="3+">3+</option>
+                        <option value="4+">4+</option>
+                        
+                    </optgroup>
+                    
+                </select>
+                
+            </form> -->
+           <!-- <div class="plFilter-btn">
+            <button>Save Search</button>
+           </div> -->
+        </section>
+
+        <!-- This section is for the product listing -->
+        <section id="productsContainer">
+          
+            <!-- When ever any product is been clicked it will take 
+                the user to the products detail page -->
+            <div class="pc-title-p">
+                <h1>Wuse CAD, FCT real estate & homes for sale</h1>
+                <p>500 Homes</p>
+            </div>
+            
+            <div class="pcard">
+                
+                
+                <div class="pduct">
+
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            <img src="./images/Manshion05(3).jpg" alt="Product Image" width="500" height="320">
+                        </a>
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                        
+                </div>
+                <div class="pduct">
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            
+                            <img src="./images/Bungalow04.jpg" alt="" width="500" height="320">
+                        </a>
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                               
+                </div>
+                <div class="pduct">
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            <img src="./images/Manshion06.jpg" alt="" width="500" height="320">
+                        </a>
+                        
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                     
+                </div>
+                
+            </div>
+            <div class="pcard">
+                
+                
+                <div class="pduct">
+
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            <img src="./images/Manshion05(3).jpg" alt="Product Image" width="500" height="320">
+                        </a>
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                        
+                </div>
+                <div class="pduct">
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            
+                            <img src="./images/Bungalow04.jpg" alt="" width="500" height="320">
+                        </a>
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                               
+                </div>
+                <div class="pduct">
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            <img src="./images/Manshion06.jpg" alt="" width="500" height="320">
+                        </a>
+                        
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                     
+                </div>
+                
+            </div>
+            <div class="pcard">
+                
+                
+                <div class="pduct">
+
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            <img src="./images/Manshion05(3).jpg" alt="Product Image" width="500" height="320">
+                        </a>
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                        
+                </div>
+                <div class="pduct">
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            
+                            <img src="./images/Bungalow04.jpg" alt="" width="500" height="320">
+                        </a>
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                               
+                </div>
+                <div class="pduct">
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            <img src="./images/Manshion06.jpg" alt="" width="500" height="320">
+                        </a>
+                        
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                     
+                </div>
+                
+            </div>
+            <div class="pcard">
+                
+                
+                <div class="pduct">
+
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            <img src="./images/Manshion05(3).jpg" alt="Product Image" width="500" height="320">
+                        </a>
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                        
+                </div>
+                <div class="pduct">
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            
+                            <img src="./images/Bungalow04.jpg" alt="" width="500" height="320">
+                        </a>
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                               
+                </div>
+                <div class="pduct">
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            <img src="./images/Manshion06.jpg" alt="" width="500" height="320">
+                        </a>
+                        
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                     
+                </div>
+                
+            </div>
+            <div class="pcard">
+                
+                
+                <div class="pduct">
+
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            <img src="./images/Manshion05(3).jpg" alt="Product Image" width="500" height="320">
+                        </a>
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                        
+                </div>
+                <div class="pduct">
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            
+                            <img src="./images/Bungalow04.jpg" alt="" width="500" height="320">
+                        </a>
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                               
+                </div>
+                <div class="pduct">
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            <img src="./images/Manshion06.jpg" alt="" width="500" height="320">
+                        </a>
+                        
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                     
+                </div>
+                
+            </div>
+            <div class="pcard">
+                
+                
+                <div class="pduct">
+
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            <img src="./images/Manshion05(3).jpg" alt="Product Image" width="500" height="320">
+                        </a>
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                        
+                </div>
+                <div class="pduct">
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            
+                            <img src="./images/Bungalow04.jpg" alt="" width="500" height="320">
+                        </a>
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                               
+                </div>
+                <div class="pduct">
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            <img src="./images/Manshion06.jpg" alt="" width="500" height="320">
+                        </a>
+                        
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                     
+                </div>
+                
+            </div>
+            <div class="pcard">
+                
+                
+                <div class="pduct">
+
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            <img src="./images/Manshion05(3).jpg" alt="Product Image" width="500" height="320">
+                        </a>
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                        
+                </div>
+                <div class="pduct">
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            
+                            <img src="./images/Bungalow04.jpg" alt="" width="500" height="320">
+                        </a>
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                               
+                </div>
+                <div class="pduct">
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            <img src="./images/Manshion06.jpg" alt="" width="500" height="320">
+                        </a>
+                        
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                     
+                </div>
+                
+            </div>
+            <div class="pcard">
+                
+                
+                <div class="pduct">
+
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            <img src="./images/Manshion05(3).jpg" alt="Product Image" width="500" height="320">
+                        </a>
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                        
+                </div>
+                <div class="pduct">
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            
+                            <img src="./images/Bungalow04.jpg" alt="" width="500" height="320">
+                        </a>
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                               
+                </div>
+                <div class="pduct">
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            <img src="./images/Manshion06.jpg" alt="" width="500" height="320">
+                        </a>
+                        
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                     
+                </div>
+                
+            </div>
+            <div class="pcard">
+                
+                
+                <div class="pduct">
+
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            <img src="./images/Manshion05(3).jpg" alt="Product Image" width="500" height="320">
+                        </a>
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                        
+                </div>
+                <div class="pduct">
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            
+                            <img src="./images/Bungalow04.jpg" alt="" width="500" height="320">
+                        </a>
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                               
+                </div>
+                <div class="pduct">
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            <img src="./images/Manshion06.jpg" alt="" width="500" height="320">
+                        </a>
+                        
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                     
+                </div>
+                
+            </div>
+            <div class="pcard">
+                
+                
+                <div class="pduct">
+
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            <img src="./images/Manshion05(3).jpg" alt="Product Image" width="500" height="320">
+                        </a>
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                        
+                </div>
+                <div class="pduct">
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            
+                            <img src="./images/Bungalow04.jpg" alt="" width="500" height="320">
+                        </a>
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                               
+                </div>
+                <div class="pduct">
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            <img src="./images/Manshion06.jpg" alt="" width="500" height="320">
+                        </a>
+                        
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                     
+                </div>
+                
+            </div>
+            <div class="pcard">
+                
+                
+                <div class="pduct">
+
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            <img src="./images/Manshion05(3).jpg" alt="Product Image" width="500" height="320">
+                        </a>
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                        
+                </div>
+                <div class="pduct">
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            
+                            <img src="./images/Bungalow04.jpg" alt="" width="500" height="320">
+                        </a>
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                               
+                </div>
+                <div class="pduct">
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            <img src="./images/Manshion06.jpg" alt="" width="500" height="320">
+                        </a>
+                        
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                     
+                </div>
+                
+            </div>
+            <div class="pcard">
+                
+                
+                <div class="pduct">
+
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            <img src="./images/Manshion05(3).jpg" alt="Product Image" width="500" height="320">
+                        </a>
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                        
+                </div>
+                <div class="pduct">
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            
+                            <img src="./images/Bungalow04.jpg" alt="" width="500" height="320">
+                        </a>
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                               
+                </div>
+                <div class="pduct">
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            <img src="./images/Manshion06.jpg" alt="" width="500" height="320">
+                        </a>
+                        
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                     
+                </div>
+                
+            </div>
+            <div class="pcard">
+                
+                
+                <div class="pduct">
+
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            <img src="./images/Manshion05(3).jpg" alt="Product Image" width="500" height="320">
+                        </a>
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                        
+                </div>
+                <div class="pduct">
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            
+                            <img src="./images/Bungalow04.jpg" alt="" width="500" height="320">
+                        </a>
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                               
+                </div>
+                <div class="pduct">
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            <img src="./images/Manshion06.jpg" alt="" width="500" height="320">
+                        </a>
+                        
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                     
+                </div>
+                
+            </div>
+            <div class="pcard">
+                
+                
+                <div class="pduct">
+
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            <img src="./images/Manshion05(3).jpg" alt="Product Image" width="500" height="320">
+                        </a>
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                        
+                </div>
+                <div class="pduct">
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            
+                            <img src="./images/Bungalow04.jpg" alt="" width="500" height="320">
+                        </a>
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                               
+                </div>
+                <div class="pduct">
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            <img src="./images/Manshion06.jpg" alt="" width="500" height="320">
+                        </a>
+                        
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                     
+                </div>
+                
+            </div>
+            <div class="pcard">
+                
+                
+                <div class="pduct">
+
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            <img src="./images/Manshion05(3).jpg" alt="Product Image" width="500" height="320">
+                        </a>
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                        
+                </div>
+                <div class="pduct">
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            
+                            <img src="./images/Bungalow04.jpg" alt="" width="500" height="320">
+                        </a>
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                               
+                </div>
+                <div class="pduct">
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            <img src="./images/Manshion06.jpg" alt="" width="500" height="320">
+                        </a>
+                        
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                     
+                </div>
+                
+            </div>
+            <div class="pcard">
+                
+                
+                <div class="pduct">
+
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            <img src="./images/Manshion05(3).jpg" alt="Product Image" width="500" height="320">
+                        </a>
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                        
+                </div>
+                <div class="pduct">
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            
+                            <img src="./images/Bungalow04.jpg" alt="" width="500" height="320">
+                        </a>
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                               
+                </div>
+                <div class="pduct">
+                    <div class="img">
+                        <a href="./p-details-page.html">
+                            <img src="./images/Manshion06.jpg" alt="" width="500" height="320">
+                        </a>
+                        
+                    </div>
+                    <p>House for sale</p>
+                    <div class="pcard-info">
+                        
+                        <div class="pdetails">
+                            <h1>N2,500,000</h1>
+                            <p>3 bed 2.5 bath</p>
+                            <p>Wuse, Central Area</p>
+                        </div>
+                        <div class="pcard-info-btn">
+                            <a href="./agent-profile-page.html">
+                                <button>Contact Agent</button>
+                            </a>
+                        </div>
+                    </div>                     
+                </div>
+                
+            </div>
+            
+                
+
+                
+            
+
+        </section>
+        
+    </main>
+
+    
+    <footer>
+        <div class="about-letin">
+            <h3>ABout LettInn Recommendation's</h3>
+            <p>Recommendations are based on your location and search activity, such as the homes 
+                you've viewed and saved and the filters you've used. We use this 
+                information to bring similar homes to your attention, so you don't miss out.
+            </p>
+        </div>
+        <div class="footerflex">
+           
+            <section class="company">
+                <h3>Company</h3>
+                <p><a href="#">About Us</a></p>
+                <p><a href="#">Team</a></p>
+                <p><a href="#">Sales Leadership</a></p>
+                <p><a href="#">Investors</a></p>
+                <p><a href="#">Join as an agent</a></p>
+                <p><a href="#">Careers</a></p>
+                <p><a href="#">Contact Us</a></p>
+                <p><a href="#">Offices</a></p>
+                <p><a href="#">Newsrrom</a></p>
+                
+            </section>
+    
+            <section class="Explore">
+                <h3>Explore</h3>
+                <p><a href="#">Concierge</a></p>
+                <p><a href="#">Private Exclusive</a></p>
+                <p><a href="#">LetInn Coming Soon</a></p>
+                <p><a href="#">Find an Agent</a></p>
+                <p><a href="#">Mortgage Calculator</a></p>
+                <p><a href="#">LetInn Academy</a></p>
+                <p><a href="#">LetInn Care</a></p>
+                <p><a href="#">Diversity & Inclusion</a></p>
+                <p><a href="#">Blog</a></p>
+                <p><a href="#">Neighborhood Guides</a></p>
+                <p><a href="#">New Development</a></p>
+                <p><a href="#">Commercial</a></p>
+                <p><a href="#">Resently Sold Homes</a></p>
+                <p><a href="#">Sitemap</a></p>
+            </section>
+
+            <section class="moreinfo">
+                <h3>More About LettIn</h3>
+                <p><a href="#">Do not sell my personal information</a></p>
+                <p><a href="#">Terms of service</a></p>
+                <p><a href="#">Privacy center</a></p>
+                <p><a href="#">Scam avoidance</a></p>
+                <p><a href="#">Responsible disclosure</a></p>
+                <p><a href="#">Notice for abuja applicants</a></p>
+                <p><a href="#">Your FCT privacy rights</a></p>
+            </section>
+    
+            <section class="social">
+                <h3>Social Media</h3>
+                <p><a href=""></a></p>
+                <p><a href=""></a></p>
+                <p><a href=""></a></p>
+                <p><a href=""></a></p>
+                <p><a href=""></a></p>
+                <p><a href=""></a></p>
+            </section>
+        </div>
+
+        <section class="copyright">
+            <p>&copy; 2024</p>
+            <p>All rights reserved</p>
+        </section>
+    </footer>
+</body>
+</html>
