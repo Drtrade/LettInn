@@ -54,3 +54,25 @@ autoShowSlides();
 
 
 
+// This is code for tab functionalities
+document.addEventListener('DOMContentLoaded', function () {
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.content');
+
+    tabButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const id = this.dataset.id;
+
+            tabButtons.forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            tabContents.forEach(content => {
+                content.classList.remove('active');
+            });
+
+            this.classList.add('active');
+            document.getElementById(id).classList.add('active');
+        });
+    });
+});

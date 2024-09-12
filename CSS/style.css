@@ -374,18 +374,22 @@ nav{
     font-size: 18px;
     margin: 3px;
 }
+
+
+
+
+
+
 /* Tabs starts here */
-/* Base Styles (Desktop) */
-/* Base Styles (Desktop) */
-#tab1 {
+#tab1, #tab2, #tab3 {
     display: flex;
-    gap: 20px;
+    gap: 10px;
     flex-wrap: wrap; /* Added to handle overflow gracefully */
 }
 
-.tab1card {
+.tab1card, .tab2card, .tab3card {
     max-height: 300px;
-    border: 1px solid var(--rich-blue);
+    /* border: 1px solid var(--rich-blue); */
     width: calc(33.333% - 20px); /* Adjust width to handle three cards per row */
     border-radius: 5px;
     display: flex;
@@ -395,11 +399,12 @@ nav{
     background-color: #f9f9f9;
 }
 
-.tab1card:hover {
+.tab1card:hover, .tab2card:hover, .tab3card:hover {
     border: 2px solid var(--rich-blue);
+    cursor: pointer;
 }
 
-.tab1CardDetails {
+.tab1CardDetails, .tab2CardDetails, .tab3CardDetails {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -423,7 +428,7 @@ nav{
     /* Adjust the font-size or add icon directly */
 }
 
-.tab1P {
+.tab1P, .tab2P, .tab3P {
     margin: 20px auto;
     font-size: 16px;
     bottom: 0;
@@ -432,7 +437,7 @@ nav{
     
 }
 
-.tab1H {
+.tab1H, .tab2H, .tab3H {
     bottom: 0;
     /* margin-top: 20px; */
     text-decoration: underline;
@@ -442,56 +447,67 @@ nav{
     position: absolute;
    
 }
-
-/* **************Hero for tab example */
-
-.hero{
-    width: 80%;
-    height: 450px;
-    position: relative;
-    margin:100px auto;
-    overflow: hidden;
-}
-.btn-box button{
-    background: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    margin-right: 50px;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.conttent-right img{
-    width: 350px;
-}
-
-.content{
+/* .tab-btn-container{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5% auto;
-    position: absolute;
-    transform: translateX(100%);
+    flex-direction: row;
+    gap: 10px;
     
 }
-.content p{
-    font-size: 13px;
-    padding: 30px 0;
-}
-.conttent-left{
-    flex-basis: 50%;
-}
-.conttent-right{
-    flex-basis: 50%;
-    text-align: center;
+
+.tab-btn{
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.36 linear;
+    letter-spacing: 0.25rem;
+    background: hsl(212, 33%, 89%);
+    border-radius: 5px;
+} */
+
+
+
+.tab-btn:hover:not(.active) {
+    background: hsl(205, 100%, 96%);
+    color: #49a6e9;
 }
 
-#content1{
-    transform: translateX(0px);
+
+/* hide content */
+/* .content {
+    display: none;
+}
+.tab-btn-container.active {
+    background: var(--white);
+}
+.content.active {
+    display: block;
+} */
+
+
+/* Basic styles for tabs and contents */
+.tab-btn-container {
+    display: flex;
 }
 
+.tab-btn {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #f1f1f1;
+}
+
+.tab-btn.active {
+    background-color: #555;
+    color: #fff;
+}
+
+.tab-content .content {
+    display: none;
+}
+
+.tab-content .content.active {
+    display: block;
+}
 
 
 
